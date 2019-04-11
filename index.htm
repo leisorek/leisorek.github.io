@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style_sheetsindex.css">
+    </head>
+    <body>
+        <section>
+            
+        <header class="sticky">s
+            <img id="logo" src="images/greybox.png">
+            <h1 id="name"><nobr>Ilan Leisorek</nobr></h1>
+        </header>
+        <nav>
+            <div class="navbar">
+                <a class="active" href="index.htm">Index</a> 
+                <a href="achievments.htm">Achievments</a> 
+                <a href="#">Hobbies</a> 
+                <a href="#">Contact Me</a>
+            </div>
+        </nav>
+            
+            <div class="left"><div class="container">
+                <div class="row">
+                </div>
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="images/president.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="images/Ilanportrait.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="images/family.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="images/friends.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="images/soccer.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="images/barmitzvah.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/president.jpg" style="width:100%" onclick="currentSlide(1)" alt="President">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/Ilanportrait.png" style="width:100%" onclick="currentSlide(2)" alt="Football">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/family.jpg" style="width:100%" onclick="currentSlide(3)" alt="Family">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/friends.png" style="width:100%" onclick="currentSlide(4)" alt="Friends">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/soccer.jpg" style="width:100%" onclick="currentSlide(5)" alt="Soccer">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="images/barmitzvah.jpg" style="width:100%" onclick="currentSlide(6)" alt="Bar Mitzvah">
+    </div>
+  </div>
+</div></div>
+            <div class="right"><h1>Early Life</h1><br><p>  I was born in Mexico City and I lived there until I was 5 years old. I moved to San Diego with only my parenst adn sibling, the rest of my family still lives in Mexico. Once I came to San Diego I started at an Elementary school in Carmel Valley called Solana Highands. I went to this school until 4th grade but then I moved to Solana Pacific for 5th and 6th grade. During middle school I went to Carmel Valley Middle School until I was in 8th grade.</p><h1>Moving schools</h1><p>After middle school my family and I decided to make a huge change for my life and that is when I decided to move into a private jewish day school for high school I now go to the San Diego Jewish Academy.</p></div>
+        </section>
+    
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+        </script>
+            
+            <footer>
+                <h1>&#169;Ilan Leisorek</h1>
+                <a href="achievments.htm">The Goat!</a>
+            </footer>
+    </body>
+</html>

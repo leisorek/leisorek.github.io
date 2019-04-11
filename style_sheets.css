@@ -1,0 +1,89 @@
+/*Achievments*/
+    /*title sidebar*/
+            .sticky {
+                position: fixed;
+                width: 8.5%;
+                height: 400px;
+                background-color: black;
+                float: left;
+                text-align: center;
+            }
+            #logo{
+                width: 100px;
+                height: 100px;
+                position: relative;
+                top: 5px;
+            }
+            #name{
+              color: aqua;
+              transform:rotate(270deg);
+              position: relative;
+              top: 175px;
+              font-size: 40px;
+            }
+            
+    /*navigation tabs*/
+            nav{
+                float: center;
+                text-align: center;
+                width: 72.5%;
+                background-color: #333;
+                position: relative;
+                left: 130px;
+            }
+            .navbar {
+                width: 100%;
+                background-color: #000000;
+                overflow: auto;
+            }
+            .navbar a {
+                float: left;
+                padding: 12px;
+                color: white;
+                text-decoration: none;
+                font-size: 17px;
+                width: 22%; /* Four links of equal widths */
+                text-align: center;
+            }
+            .navbar a:hover {
+                background-color: #ff0000;
+            }
+            .navbar a.active {
+                background-color: #00ff00;
+            }
+    /*Body*/
+            img{
+                width: auto;
+                height: inherit;
+            }
+            .left {
+                float: left;
+                width: 35%;
+                height: 275px;
+                margin: 10px 10px 10px 130px; 
+                border: 3px solid #73AD21;
+                text-align: center;
+            }
+            .right{
+                float: left;
+                width: 35%;
+                height: 275px;
+                margin: 10px;
+                border: 3px solid #73AD21;
+                text-align: center;
+            }
+    /*footer*/
+            
+            footer {
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+            
+    /*extra*/
+            section:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
